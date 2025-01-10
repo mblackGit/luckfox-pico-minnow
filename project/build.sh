@@ -170,7 +170,7 @@ function choose_target_board() {
 	echo -e "${C_GREEN} "${space8}Lunch menu...pick the Luckfox Pico hardware version:"${C_NORMAL}"
 	echo -e "${C_GREEN} "${space8}选择 Luckfox Pico 硬件版本:"${C_NORMAL}"
 
- 	echo "${space8}${space8}[${LUNCH_NUM}] The Minnow"
+ 	echo "${space8}${space8}[${LUNCH_NUM}] The_Minnow"
 	LUNCH_NUM=$((LUNCH_NUM + 1))
 	echo "${space8}${space8}[${LUNCH_NUM}] RV1103_Luckfox_Pico"
 	LUNCH_NUM=$((LUNCH_NUM + 1))
