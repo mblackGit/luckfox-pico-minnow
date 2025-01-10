@@ -149,8 +149,7 @@ function __IS_IN_ARRAY() {
 }
 
 function choose_target_board() {
-	local LF_HARDWARE=("The Minnow"
- 		"RV1103_Luckfox_Pico"
+	local LF_HARDWARE=("RV1103_Luckfox_Pico"
 		"RV1103_Luckfox_Pico_Mini_A"
 		"RV1103_Luckfox_Pico_Mini_B"
 		"RV1103_Luckfox_Pico_Plus"
