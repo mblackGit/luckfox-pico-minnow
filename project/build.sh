@@ -34,7 +34,7 @@ GLOBAL_PARTITIONS=""
 GLOBAL_SDK_VERSION=""
 WIFI_NEW_CONF=${SDK_APP_DIR}/wifi_app/wpa_supplicant_new.conf
 WIFI_CONF=${SDK_APP_DIR}/wifi_app/wpa_supplicant.conf
-BUILDROOT_PATH=${SDK_SYSDRV_DIR}/source/buildroot/buildroot-2023.02.6
+BUILDROOT_PATH=${SDK_SYSDRV_DIR}/source/buildroot/buildroot-2024.11.1
 BUILDROOT_CONFIG_FILE=${BUILDROOT_PATH}/.config
 SDK_CONFIG_DIR=${SDK_ROOT_DIR}/config
 DTS_CONFIG=${SDK_CONFIG_DIR}/dts_config
@@ -169,8 +169,6 @@ function choose_target_board() {
 	echo -e "${C_GREEN} "${space8}Lunch menu...pick the Luckfox Pico hardware version:"${C_NORMAL}"
 	echo -e "${C_GREEN} "${space8}选择 Luckfox Pico 硬件版本:"${C_NORMAL}"
 
- 	echo "${space8}${space8}[${LUNCH_NUM}] The_Minnow"
-	LUNCH_NUM=$((LUNCH_NUM + 1))
 	echo "${space8}${space8}[${LUNCH_NUM}] RV1103_Luckfox_Pico"
 	LUNCH_NUM=$((LUNCH_NUM + 1))
 	echo "${space8}${space8}[${LUNCH_NUM}] RV1103_Luckfox_Pico_Mini_A"
@@ -475,7 +473,7 @@ function usage() {
 	echo "check              -check the environment of building"
 	echo "info               -see the current board building information"
 	echo ""
-	echo "buildrootconfig    -config b	# EMMCuildroot and save defconfig"
+	echo "buildrootconfig    -config buildroot and save defconfig"
 	echo "kernelconfig       -config kernel and save defconfig"
 	echo ""
 	echo "Default option is 'allsave'."
