@@ -149,7 +149,8 @@ function __IS_IN_ARRAY() {
 }
 
 function choose_target_board() {
-	local LF_HARDWARE=("RV1103_Luckfox_Pico"
+	local LF_HARDWARE=("The Minnow"
+ 		"RV1103_Luckfox_Pico"
 		"RV1103_Luckfox_Pico_Mini_A"
 		"RV1103_Luckfox_Pico_Mini_B"
 		"RV1103_Luckfox_Pico_Plus"
@@ -169,6 +170,8 @@ function choose_target_board() {
 	echo -e "${C_GREEN} "${space8}Lunch menu...pick the Luckfox Pico hardware version:"${C_NORMAL}"
 	echo -e "${C_GREEN} "${space8}选择 Luckfox Pico 硬件版本:"${C_NORMAL}"
 
+ 	echo "${space8}${space8}[${LUNCH_NUM}] The Minnow"
+	LUNCH_NUM=$((LUNCH_NUM + 1))
 	echo "${space8}${space8}[${LUNCH_NUM}] RV1103_Luckfox_Pico"
 	LUNCH_NUM=$((LUNCH_NUM + 1))
 	echo "${space8}${space8}[${LUNCH_NUM}] RV1103_Luckfox_Pico_Mini_A"
